@@ -9,7 +9,7 @@
 import Foundation
 import CareKitUI
 
-struct DimensionStyle: OCKDimensionStyler{
+struct DimensionStyle: OCKDimensionStyler {
     var imageHeight2: CGFloat { 55 }
     var imageHeight1: CGFloat { 160 }
     var pointSize3: CGFloat { 12 }

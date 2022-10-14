@@ -9,6 +9,6 @@
 import Foundation
 import CareKitUI
 
-struct AnimationStyle: OCKAnimationStyler{
+struct AnimationStyle: OCKAnimationStyler {
     var stateChangeDuration: Double { 0.5 }
 }

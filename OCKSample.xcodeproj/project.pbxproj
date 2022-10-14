@@ -72,6 +72,9 @@
 		70F921B127CAC16E00368CEC /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F921AB27CABE3000368CEC /* SessionDelegate.swift */; };
 		70F921B227CAC16E00368CEC /* RemoteSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F921AD27CABE7700368CEC /* RemoteSessionDelegate.swift */; };
 		70F921B327CAC16E00368CEC /* LocalSyncSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F921AF27CABED600368CEC /* LocalSyncSessionDelegate.swift */; };
+		70FA219628F9E926007A8775 /* DimensionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9AD28F9E4E9004EEBF0 /* DimensionStyle.swift */; };
+		70FA219728F9E92C007A8775 /* AppearanceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9AB28F9E4BF004EEBF0 /* AppearanceStyle.swift */; };
+		70FA219828F9E931007A8775 /* AnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9A928F9E398004EEBF0 /* AnimationStyle.swift */; };
 		9103AA5227B8C913002C921E /* FontColorKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F03AA727860E7700E5AFB4 /* FontColorKey.swift */; };
 		91693818271B5E1600A634ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7036E63F25717F85006E9A3C /* Constants.swift */; };
 		9169381B271B64E100A634ED /* Styler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169381A271B64E100A634ED /* Styler.swift */; };
@@ -726,6 +729,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70FA219628F9E926007A8775 /* DimensionStyle.swift in Sources */,
 				70F921B327CAC16E00368CEC /* LocalSyncSessionDelegate.swift in Sources */,
 				70221F3928D8C10800971195 /* StoreManagerKey.swift in Sources */,
 				70A98D63278A268B009B58F2 /* ColorStyler.swift in Sources */,
@@ -744,6 +748,7 @@
 				70F03AA627860B2500E5AFB4 /* OCKPatient+Parse.swift in Sources */,
 				70221F3828D8C0CB00971195 /* AppDelegateKey.swift in Sources */,
 				9103AA5227B8C913002C921E /* FontColorKey.swift in Sources */,
+				70FA219828F9E931007A8775 /* AnimationStyle.swift in Sources */,
 				707CC719254DA91900116728 /* OCKLocalization.swift in Sources */,
 				7007759B252229C900EC0EDA /* User.swift in Sources */,
 				70F03A9B27860A2000E5AFB4 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */,
@@ -754,6 +759,7 @@
 				70F03AA527860B2500E5AFB4 /* OCKOutcomeValue+Identifiable.swift in Sources */,
 				91AD923F24A4C42D00925D4D /* NotificationController.swift in Sources */,
 				70CF66E528E1E74C00FAE977 /* TintColorFlipKey.swift in Sources */,
+				70FA219728F9E92C007A8775 /* AppearanceStyle.swift in Sources */,
 				70F03A9C27860A2000E5AFB4 /* OCKStore.swift in Sources */,
 				70C0D474279BA492003DA141 /* Utility.swift in Sources */,
 				91AD923D24A4C42D00925D4D /* AppDelegate.swift in Sources */,
