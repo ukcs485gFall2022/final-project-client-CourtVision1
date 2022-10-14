@@ -217,7 +217,7 @@ class CareViewController: OCKDailyPageViewController {
 
             // Create a plot comparing nausea to medication adherence.
             let nauseaDataSeries = OCKDataSeriesConfiguration(
-                taskID: TaskID.nausea,
+                taskID: "nausea",
                 legendTitle: "Nausea",
                 gradientStartColor: nauseaGradientStart,
                 gradientEndColor: nauseaGradientEnd,
@@ -225,7 +225,7 @@ class CareViewController: OCKDailyPageViewController {
                 eventAggregator: OCKEventAggregator.countOutcomeValues)
 
             let doxylamineDataSeries = OCKDataSeriesConfiguration(
-                taskID: TaskID.doxylamine,
+                taskID: "doxylamine",
                 legendTitle: "Doxylamine",
                 gradientStartColor: .systemGray2,
                 gradientEndColor: .systemGray,

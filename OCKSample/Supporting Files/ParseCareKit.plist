@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>ApplicationID</key>
-	<string>82d161710b1665aa9e63b1403139d44cb7a6e13d30002ab879ada10a5429cc39</string>
+	<string>E036A0C5-6829-4B40-9B3B-3E05F6DF32B2</string>
 	<key>Server</key>
-	<string>https://amco-cs485-project.herokuapp.com/parse</string>
+	<string>http://localhost:1337/parse</string>
 	<key>LiveQueryServer</key>
 	<string></string>
 	<key>UseTransactions</key>

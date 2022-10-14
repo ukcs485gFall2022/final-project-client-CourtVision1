@@ -26,7 +26,6 @@ struct LoginView: View {
     @ObservedObject var viewModel: LoginViewModel
     @State var usersname = ""
     @State var password = ""
-    @State var email = ""
     @State var firstName: String = ""
     @State var lastName: String = ""
     @State var signupLoginSegmentValue = 0
@@ -34,17 +33,16 @@ struct LoginView: View {
     var body: some View {
         VStack {
             // Change the title to the name of your application
-            Text("Shower Tracker")
+            Text("CareKit Sample App")
                 .font(.largeTitle)
-                .fontWeight(.bold)
                 .foregroundColor(.white)
                 .padding()
             // Change this image to something that represents your application
-            Image("shower")
+            Image("exercise.jpg")
                 .resizable()
                 .frame(width: 150, height: 150, alignment: .center)
                 .clipShape(Circle())
-                .overlay(Circle().stroke(Color(.purple), lineWidth: 4))
+                .overlay(Circle().stroke(Color(.white), lineWidth: 4))
                 .shadow(radius: 10)
                 .padding()
 
@@ -69,11 +67,6 @@ struct LoginView: View {
                     .cornerRadius(20.0)
                     .shadow(radius: 10.0, x: 20, y: 10)
                 SecureField("Password", text: $password)
-                    .padding()
-                    .background(.white)
-                    .cornerRadius(20.0)
-                    .shadow(radius: 10.0, x: 20, y: 10)
-                TextField("Email", text: $email)
                     .padding()
                     .background(.white)
                     .cornerRadius(20.0)
@@ -109,7 +102,6 @@ struct LoginView: View {
                         await viewModel.signup(.patient,
                                                username: usersname,
                                                password: password,
-                                               email: email,
                                                firstName: firstName,
                                                lastName: lastName)
                     }
@@ -135,7 +127,7 @@ struct LoginView: View {
                         .frame(width: 300)
                 }
             })
-            .background(Color(.purple))
+            .background(Color(.green))
             .cornerRadius(15)
 
             Button(action: {
