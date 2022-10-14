@@ -10,9 +10,9 @@ import Foundation
 import CareKitUI
 
 struct AppearanceStyle: OCKAppearanceStyler {
-    var cornerRadius1: CGFloat { 10 }
-    var cornerRadius2: CGFloat { 8 }
+    var cornerRadius1: CGFloat { 25 }
+    var cornerRadius2: CGFloat { 20 }
 
-    var borderWidth1: CGFloat { 2 }
-    var borderWidth2: CGFloat { 1 }
+    var borderWidth1: CGFloat { 15 }
+    var borderWidth2: CGFloat { 8 }
 }
