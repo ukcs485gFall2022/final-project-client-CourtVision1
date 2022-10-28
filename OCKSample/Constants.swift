@@ -78,6 +78,7 @@ enum Constants {
     static let userLoggedIn = "userLoggedIn"
     static let storeInitialized = "storeInitialized"
     static let userTypeKey = "userType"
+    static let card = "card"
 }
 
 enum MainViewPath {
@@ -109,4 +110,10 @@ enum UserType: String, Codable {
 
 enum InstallationChannel: String {
     case global
+}
+
+enum CardType: String, Codable, CaseIterable, Identifiable {
+    var id: Self { self }
+    case instruction
+    case simple
 }
