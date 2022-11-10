@@ -12,7 +12,7 @@ import CareKitStore
 import SwiftUI
 
 class HealtKitTaskViewModel: ObservableObject {
-    
+
     @Published var healthTask = OCKHealthKitTask(id: "",
                                                  title: nil,
                                                  carePlanUUID: nil,
@@ -21,17 +21,19 @@ class HealtKitTaskViewModel: ObservableObject {
                                                                         start: Date(),
                                                                         end: nil,
                                                                         text: nil),
-                                                 healthKitLinkage: .init(quantityIdentifier: .waterTemperature, quantityType: .discrete, unit: .fluidOunceUS()))
-    
+                                                 healthKitLinkage: .init(quantityIdentifier: .waterTemperature,
+                                                                         quantityType: .discrete,
+                                                                         unit: .fluidOunceUS()))
+
     @Published var error: AppError?
-    
+
     // MARK: Intents
     func addTask(_ title: String, instructions: String, schedule: Date) async {
         guard AppDelegateKey.defaultValue != nil else {
             error = AppError.couldntBeUnwrapped
             return
         }
-        
+
         var updateHealthTask = OCKHealthKitTask(id: title,
                                                 title: title,
                                                 carePlanUUID: nil,
@@ -43,13 +45,12 @@ class HealtKitTaskViewModel: ObservableObject {
                                                 healthKitLinkage: .init(quantityIdentifier: .waterTemperature,
                                                                         quantityType: .discrete,
                                                                         unit: .fluidOunceUS()))
-        
+
         updateHealthTask.instructions = instructions
-        
-        
+
         do {
             try await AppDelegateKey.defaultValue?.healthKitStore.addTasksIfNotPresent([updateHealthTask])
-        } catch{
+        } catch {
             self.error = AppError.errorString("Couldn't add task: \(error.localizedDescription)")
         }
     }

@@ -14,8 +14,6 @@ import CareKitStore
 import WatchConnectivity
 import os.log
 
-// swiftlint:disable function_parameter_count
-
 class LoginViewModel: ObservableObject {
 
     // MARK: Public read, private write properties
