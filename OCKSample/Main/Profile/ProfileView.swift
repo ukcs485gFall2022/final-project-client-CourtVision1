@@ -13,42 +13,47 @@ import CareKit
 import os.log
 
 struct ProfileView: View {
+    @Environment(\.tintColor) private var tintColor
     @StateObject var viewModel = ProfileViewModel()
     @ObservedObject var loginViewModel: LoginViewModel
-    @State var firstName = ""
-    @State var lastName = ""
-    @State var birthday = Date()
-    @State var isPresentingAddTask = false
 
     var body: some View {
-        NavigationView{
+        NavigationView {
             VStack {
-                VStack(alignment: .leading) {
-                    TextField("First Name", text: $firstName)
-                        .padding()
-                        .cornerRadius(20.0)
-                        .shadow(radius: 10.0, x: 20, y: 10)
-                    
-                    TextField("Last Name", text: $lastName)
-                        .padding()
-                        .cornerRadius(20.0)
-                        .shadow(radius: 10.0, x: 20, y: 10)
-                    
-                    DatePicker("Birthday", selection: $birthday, displayedComponents: [DatePickerComponents.date])
-                        .padding()
-                        .cornerRadius(20.0)
-                        .shadow(radius: 10.0, x: 20, y: 10)
+                VStack {
+                    ProfileImageView(viewModel: viewModel)
+                    Form {
+                        Section(header: Text("About")) {
+                            TextField("First Name", text: $viewModel.firstName)
+                            TextField("Last Name", text: $viewModel.lastName)
+                            TextField("Allergies", text: $viewModel.allergies)
+                            DatePicker("Birthday",
+                                       selection: $viewModel.birthday,
+                                       displayedComponents: [DatePickerComponents.date])
+                            Picker(selection: $viewModel.sex,
+                                   label: Text("Sex")) {
+                                Text(OCKBiologicalSex.female.rawValue).tag(OCKBiologicalSex.female)
+                                Text(OCKBiologicalSex.male.rawValue).tag(OCKBiologicalSex.male)
+                                Text(viewModel.sex.rawValue)
+                                    .tag(OCKBiologicalSex.other(viewModel.sexOtherField))
+                            }
+                        }
+                        Section(header: Text("Contact")) {
+                            TextField("Street", text: $viewModel.street)
+                            TextField("City", text: $viewModel.city)
+                            TextField("State", text: $viewModel.state)
+                            TextField("Postal code", text: $viewModel.zipcode)
+                            TextField("Email Address", text: $viewModel.email)
+                            TextField("Messaging Numbers", text: $viewModel.messagingNumber)
+                            TextField("Phone Numbers", text: $viewModel.phoneNumber)
+                            TextField("Other Contact Info", text: $viewModel.otherContactInfo)
+                        }
+                    }
                 }
-                
+
                 Button(action: {
                     Task {
-                        do {
-                            try await viewModel.saveProfile(firstName,
-                                                            last: lastName,
-                                                            birth: birthday)
-                        } catch {
-                            Logger.profile.error("Error saving profile: \(error.localizedDescription)")
-                        }
+                        await viewModel.saveProfile()
                     }
                 }, label: {
                     Text("Save Profile")
@@ -59,7 +64,7 @@ struct ProfileView: View {
                 })
                 .background(Color(.green))
                 .cornerRadius(15)
-                
+
                 // Notice that "action" is a closure (which is essentially
                 // a function as argument like we discussed in class)
                 Button(action: {
@@ -78,36 +83,33 @@ struct ProfileView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Add Task") {
-                        
-                        self.isPresentingAddTask = true
+                    Button("My Contact") {
+                        viewModel.isPresentingContact = true
                     }
-                    .sheet(isPresented: $isPresentingAddTask) {
-                        TaskView()                        
+                    .sheet(isPresented: $viewModel.isPresentingContact) {
+                        MyContactView()
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Add HealthKitTask") {
-                        
-                        self.isPresentingAddTask = true
+                    Button("Add Task") {
+                        viewModel.isPresentingAddTask = true
                     }
-                    .sheet(isPresented: $isPresentingAddTask) {
-                        HealthKitTaskView()
+                    .sheet(isPresented: $viewModel.isPresentingAddTask) {
+                        TaskView()
                     }
                 }
             }
-            
-        }.onReceive(viewModel.$patient, perform: { patient in
-            if let currentFirstName = patient?.name.givenName {
-                firstName = currentFirstName
+            .sheet(isPresented: $viewModel.isPresentingImagePicker) {
+                ImagePicker(image: $viewModel.profileUIImage)
             }
-            if let currentLastName = patient?.name.familyName {
-                lastName = currentLastName
+            .alert(isPresented: $viewModel.isShowingSaveAlert) {
+                return Alert(title: Text("Update"),
+                             message: Text(viewModel.alertMessage),
+                             dismissButton: .default(Text("Ok"), action: {
+                                viewModel.isShowingSaveAlert = false
+                             }))
             }
-            if let currentBirthday = patient?.birthday {
-                birthday = currentBirthday
-            }
-        })
+        }
     }
 }
 

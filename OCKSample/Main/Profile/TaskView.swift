@@ -14,27 +14,27 @@ struct TaskView: View {
     @State var title = ""
     @State var instructions = ""
     @State var schedule = Date()
-    
+
     var body: some View {
-        NavigationView{
+        NavigationView {
             VStack {
                 VStack(alignment: .leading) {
                     TextField("Title", text: $title)
                         .padding()
                         .cornerRadius(20.0)
                         .shadow(radius: 10.0, x: 20, y: 10)
-                    
+
                     TextField("Instructions", text: $instructions)
                         .padding()
                         .cornerRadius(20.0)
                         .shadow(radius: 10.0, x: 20, y: 10)
-                    
+
                     DatePicker("Schedule", selection: $schedule, displayedComponents: [DatePickerComponents.date])
                         .padding()
                         .cornerRadius(20.0)
                         .shadow(radius: 10.0, x: 20, y: 10)
                 }
-                
+
                 Button(action: {
                     Task {
                         do {
