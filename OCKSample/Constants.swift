@@ -85,12 +85,31 @@ enum MainViewPath {
     case tabs
 }
 
+enum CareKitCard: String, CaseIterable, Identifiable {
+    var id: Self { self }
+    case button = "Button"
+    case checklist = "Checklist"
+    case featured = "Featured"
+    case grid = "Grid"
+    case instruction = "Instruction"
+    case labeledValue = "Labeled Value"
+    case link = "Link"
+    case numericProgress = "Numeric Progress"
+    case simple = "Simple"
+}
+
+enum CarePlanID: String {
+    case health // Add custom id's for your Care Plans, these are examples
+    case checkIn
+}
+
 enum TaskID {
     static let doxylamine = "doxylamine"
     static let nausea = "nausea"
     static let stretch = "stretch"
     static let kegels = "kegels"
     static let steps = "steps"
+    static let onboarding = "onboarding"
 
     static var ordered: [String] {
         [Self.steps, Self.doxylamine, Self.kegels, Self.stretch, Self.nausea]

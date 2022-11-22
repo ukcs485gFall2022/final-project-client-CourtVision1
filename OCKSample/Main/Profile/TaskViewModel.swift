@@ -12,7 +12,7 @@ import CareKitStore
 import SwiftUI
 
 class TaskViewModel: ObservableObject {
-    
+
     @Published var task = OCKTask(id: "",
                                   title: nil,
                                   carePlanUUID: nil,
@@ -23,14 +23,13 @@ class TaskViewModel: ObservableObject {
                                                          text: nil))
     @Published var error: AppError?
 
-    
     // MARK: Intents
     func addTask(_ title: String, instructions: String, schedule: Date) async {
         guard let appDelegate = AppDelegateKey.defaultValue else {
             error = AppError.couldntBeUnwrapped
             return
         }
-        
+
         var updateTask = OCKTask(id: title,
                                  title: title,
                                  carePlanUUID: nil,
@@ -39,13 +38,12 @@ class TaskViewModel: ObservableObject {
                                                         start: Date(),
                                                         end: nil,
                                                         text: nil))
-        
+
         updateTask.instructions = instructions
-        
-        
+
         do {
             try await appDelegate.store?.addTasksIfNotPresent([updateTask])
-        } catch{
+        } catch {
             self.error = AppError.errorString("Couldn't add task: \(error.localizedDescription)")
         }
     }
