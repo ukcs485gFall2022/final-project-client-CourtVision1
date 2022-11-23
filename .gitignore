@@ -5,7 +5,8 @@
 ## Build generated
 build/
 DerivedData/
-#Package.resolved
+ResearchKit/
+ParseCareKit-heroku.plist
 
 ## Various settings
 .DS_Store
