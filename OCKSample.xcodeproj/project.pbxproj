@@ -114,8 +114,6 @@
 		F52CF9AA28F9E398004EEBF0 /* AnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9A928F9E398004EEBF0 /* AnimationStyle.swift */; };
 		F52CF9AC28F9E4BF004EEBF0 /* AppearanceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9AB28F9E4BF004EEBF0 /* AppearanceStyle.swift */; };
 		F52CF9AE28F9E4E9004EEBF0 /* DimensionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9AD28F9E4E9004EEBF0 /* DimensionStyle.swift */; };
-		F53ED96F292D7118002C3413 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53ED96C292D7000002C3413 /* ResearchKit.framework */; };
-		F53ED970292D7118002C3413 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F53ED96C292D7000002C3413 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F53ED971292D759F002C3413 /* OCKTask+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583B697290B56BD00FE1C5A /* OCKTask+Custom.swift */; };
 		F53ED977292D76A0002C3413 /* Consent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED975292D76A0002C3413 /* Consent.swift */; };
 		F53ED97B292D7C66002C3413 /* OCKAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED97A292D7C66002C3413 /* OCKAnyEvent.swift */; };
@@ -139,6 +137,9 @@
 		F5ADA23E28F9FA4600D5317F /* AppearanceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9AB28F9E4BF004EEBF0 /* AppearanceStyle.swift */; };
 		F5ADA23F28F9FA4900D5317F /* DimensionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9AD28F9E4E9004EEBF0 /* DimensionStyle.swift */; };
 		F5ADA24028F9FA4B00D5317F /* AnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9A928F9E398004EEBF0 /* AnimationStyle.swift */; };
+		F5BE45A82936AD0B008D3CCE /* CustomFeaturedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE45A72936AD0B008D3CCE /* CustomFeaturedContentView.swift */; };
+		F5F43E1B2936A6E900D1A16F /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53ED96C292D7000002C3413 /* ResearchKit.framework */; };
+		F5F43E1C2936A6E900D1A16F /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F53ED96C292D7000002C3413 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,17 +174,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		51431FA223D166AE006A7CFD /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F53ED970292D7118002C3413 /* ResearchKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		91AD924C24A4C42E00925D4D /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +183,17 @@
 				91AD924B24A4C42E00925D4D /* OCKWatchSample.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F43E1D2936A6E900D1A16F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F5F43E1C2936A6E900D1A16F /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -295,6 +296,7 @@
 		F583B697290B56BD00FE1C5A /* OCKTask+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKTask+Custom.swift"; sourceTree = "<group>"; };
 		F583B699290B612400FE1C5A /* HealthKitTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitTaskView.swift; sourceTree = "<group>"; };
 		F583B69B290B619500FE1C5A /* HealthKitTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitTaskViewModel.swift; sourceTree = "<group>"; };
+		F5BE45A72936AD0B008D3CCE /* CustomFeaturedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFeaturedContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,7 +306,7 @@
 			files = (
 				70202EC12807333900CF73FB /* CareKit in Frameworks */,
 				918FDEAF271B3F8F0045A0EF /* ParseCareKit in Frameworks */,
-				F53ED96F292D7118002C3413 /* ResearchKit.framework in Frameworks */,
+				F5F43E1B2936A6E900D1A16F /* ResearchKit.framework in Frameworks */,
 				70202EC52807333A00CF73FB /* CareKitUI in Frameworks */,
 				708542F9276687F90029E888 /* HealthKit.framework in Frameworks */,
 				70202EC32807333900CF73FB /* CareKitFHIR in Frameworks */,
@@ -352,6 +354,7 @@
 			children = (
 				E7C37848228F887800E982D8 /* TipView.swift */,
 				F53ED97F292D7D9B002C3413 /* SurveyViewSynchronizer.swift */,
+				F5BE45A72936AD0B008D3CCE /* CustomFeaturedContentView.swift */,
 			);
 			path = CustomCards;
 			sourceTree = "<group>";
@@ -703,9 +706,9 @@
 				E72B2C02226939E3009A9438 /* Sources */,
 				E72B2C04226939E3009A9438 /* Resources */,
 				51431FA123D166AE006A7CFD /* Frameworks */,
-				51431FA223D166AE006A7CFD /* Embed Frameworks */,
 				91AD924C24A4C42E00925D4D /* Embed Watch Content */,
 				9169381E271B6E2100A634ED /* SwiftLint */,
+				F5F43E1D2936A6E900D1A16F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -944,6 +947,7 @@
 				7036E4C4256E0A48006E9A3C /* CareView.swift in Sources */,
 				70F921B027CABED600368CEC /* LocalSyncSessionDelegate.swift in Sources */,
 				F5144AED292C452200DA41A6 /* CustomContactViewController.swift in Sources */,
+				F5BE45A82936AD0B008D3CCE /* CustomFeaturedContentView.swift in Sources */,
 				F583B69C290B619500FE1C5A /* HealthKitTaskViewModel.swift in Sources */,
 				70F03A932786087800E5AFB4 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */,
 				70221F2828D7809800971195 /* MainTabView.swift in Sources */,

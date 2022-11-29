@@ -162,12 +162,16 @@ class CareViewController: OCKDailyPageViewController {
                     // Add a non-CareKit view into the list
                     let tipTitle = "Benefits of exercising"
                     let tipText = "Learn how activity can promote a healthy pregnancy."
-                    let tipView = TipView()
+                    let customView = CustomFeaturedContentView()
+                    customView.url = URL(string: "htt[s://cs.uky.edu")
+                    customView.imageView.image = UIImage(named: "exercise.jpg")
+                    customView.customStyle = CustomStylerKey.defaultValue
+                    /* let tipView = TipView()
                     tipView.headerView.titleLabel.text = tipTitle
                     tipView.headerView.detailLabel.text = tipText
                     tipView.imageView.image = UIImage(named: "exercise.jpg")
                     tipView.customStyle = CustomStylerKey.defaultValue
-                    listViewController.appendView(tipView, animated: false)
+                    listViewController.appendView(tipView, animated: false) */
                 }
             }
 
