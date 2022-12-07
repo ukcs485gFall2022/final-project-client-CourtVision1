@@ -99,6 +99,7 @@ enum CareKitCard: String, CaseIterable, Identifiable {
     case numericProgress = "Numeric Progress"
     case simple = "Simple"
     case survey = "Survey"
+    case custom = "Custom" // xTODO: Should add any custom card you make to this enum.
 }
 
 enum CarePlanID: String, CaseIterable, Identifiable {
@@ -113,6 +114,12 @@ enum TaskID {
     static let stretch = "stretch"
     static let kegels = "kegels"
     static let steps = "steps"
+    static let repetition = "repetition"
+    static let washFace = "washFace"
+    static let dirtiness = "dirtiness"
+    static let shower = "shower"
+    static let shampoo = "shampoo"
+    static let towels = "towels"
 
     static var ordered: [String] {
         [Self.steps, Self.doxylamine, Self.kegels, Self.stretch, Self.nausea]

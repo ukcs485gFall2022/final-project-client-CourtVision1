@@ -35,10 +35,10 @@ let informedConsentHTML = """
             <li>You will be asked if your shower data can be shared.</li>
             <li>You will be sent notifications to complete surveys.</li>
             <li>You will provide reliable data i.e. water usage, shower length, etc.</li>
-            <li>The study is expected to last 400 years.</li>
+            <li>The study is expected to last 2 years.</li>
             <li>You will not be compensated for this study.</li>
-            <li>Your information will be shared for everyone to laugh at.</li>
-            <li>You can never withdraw from the study at any time.</li>
+            <li>Your information will be kept private.</li>
+            <li>You can opt out of this study any time.</li>
         </ul>
         <h3>Eligibility Requirements</h3>
         <ul>

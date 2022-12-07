@@ -124,11 +124,11 @@ extension OCKStore {
                                interval: DateComponents(day: 2))
         ])
 
-        var doxylamine = OCKTask(id: TaskID.doxylamine, title: "Take Doxylamine",
+        var washFace = OCKTask(id: TaskID.washFace, title: "Wash Your Face",
                                  carePlanUUID: nil, schedule: schedule)
-        doxylamine.instructions = "Take 25mg of doxylamine when you experience nausea."
-        doxylamine.asset = "pills.fill"
-        doxylamine.card = .checklist
+        washFace.instructions = "Make sure to wash your face at least twice a day."
+        washFace.asset = "pills.fill"
+        washFace.card = .checklist
 
         let nauseaSchedule = OCKSchedule(composing: [
             OCKScheduleElement(start: beforeBreakfast, end: nil, interval: DateComponents(day: 1),
@@ -138,25 +138,42 @@ extension OCKStore {
         var nausea = OCKTask(id: TaskID.nausea, title: "Track your nausea",
                              carePlanUUID: nil, schedule: nauseaSchedule)
         nausea.impactsAdherence = false
-        nausea.instructions = "Tap the button below anytime you experience nausea."
+        nausea.instructions = "Tap the button below anytime you feel dirty."
         nausea.asset = "bed.double"
         nausea.card = .button
 
+        var gallonsUsed = OCKTask(id: TaskID.repetition,
+                                 title: "Track your water usage",
+                                 carePlanUUID: nil,
+                                 schedule: nauseaSchedule)
+        gallonsUsed.impactsAdherence = false
+        gallonsUsed.instructions = "Input how much water you used in gallons."
+        gallonsUsed.asset = "repeat.circle"
+        gallonsUsed.card = .custom
+
         let kegelElement = OCKScheduleElement(start: beforeBreakfast, end: nil, interval: DateComponents(day: 2))
         let kegelSchedule = OCKSchedule(composing: [kegelElement])
-        var kegels = OCKTask(id: TaskID.kegels, title: "Kegel Exercises", carePlanUUID: nil, schedule: kegelSchedule)
-        kegels.impactsAdherence = true
-        kegels.instructions = "Perform kegel exercies"
-        kegels.card = .simple
+        // swiftlint:disable:next line_length
+        var shampoo = OCKTask(id: TaskID.shampoo, title: "Do you have shampoo and soap?", carePlanUUID: nil, schedule: kegelSchedule)
+        shampoo.impactsAdherence = true
+        shampoo.instructions = "Ensure shampoo and soap is in stock"
+        shampoo.card = .simple
 
         let stretchElement = OCKScheduleElement(start: beforeBreakfast, end: nil, interval: DateComponents(day: 1))
         let stretchSchedule = OCKSchedule(composing: [stretchElement])
-        var stretch = OCKTask(id: "stretch", title: "Stretch", carePlanUUID: nil, schedule: stretchSchedule)
-        stretch.impactsAdherence = true
-        stretch.asset = "figure.walk"
-        stretch.card = .instruction
+        // swiftlint:disable:next line_length
+        var shower = OCKTask(id: "shower", title: "Did you take a shower today?", carePlanUUID: nil, schedule: stretchSchedule)
+        shower.impactsAdherence = true
+        shower.asset = "figure.walk"
+        shower.card = .instruction
 
-        try await addTasksIfNotPresent([nausea, doxylamine, kegels, stretch])
+        // swiftlint:disable:next line_length
+        var towels = OCKTask(id: TaskID.towels, title: "Do you have clean towels?", carePlanUUID: nil, schedule: nauseaSchedule)
+        towels.impactsAdherence = false
+        towels.instructions = "Ensure shampoo and soap is in stock"
+        towels.card = .grid
+
+        try await addTasksIfNotPresent([nausea, washFace, shampoo, shower, towels, gallonsUsed])
         try await addOnboardTask(carePlanUUIDs[.health])
         try await addSurveyTasks(carePlanUUIDs[.checkIn])
 
@@ -228,7 +245,7 @@ extension OCKStore {
 
         var checkInTask = OCKTask(
             id: CheckIn.identifier(),
-            title: "Check In",
+            title: "Shower Check In",
             carePlanUUID: carePlanUUID,
             schedule: checkInSchedule
         )
@@ -273,7 +290,7 @@ extension OCKStore {
 
         var rangeOfMotionTask = OCKTask(
             id: RangeOfMotion.identifier(),
-            title: "Range Of Motion",
+            title: "Shoulder Mobility",
             carePlanUUID: carePlanUUID,
             schedule: rangeOfMotionCheckSchedule
         )

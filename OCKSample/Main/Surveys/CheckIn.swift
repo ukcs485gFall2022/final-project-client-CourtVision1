@@ -34,18 +34,18 @@ extension CheckIn {
     func createSurvey() -> ORKTask {
 
         let painAnswerFormat = ORKAnswerFormat.scale(
-            withMaximumValue: 10,
+            withMaximumValue: 12,
             minimumValue: 0,
             defaultValue: 0,
             step: 1,
             vertical: false,
-            maximumValueDescription: "Very painful",
-            minimumValueDescription: "No pain"
+            maximumValueDescription: "12 minute",
+            minimumValueDescription: "1 minutes"
         )
 
         let painItem = ORKFormItem(
             identifier: Self.painItemIdentifier,
-            text: "How would you rate your pain?",
+            text: "How long was your last shower?",
             answerFormat: painAnswerFormat
         )
         painItem.isOptional = false
@@ -62,7 +62,7 @@ extension CheckIn {
 
         let sleepItem = ORKFormItem(
             identifier: Self.sleepItemIdentifier,
-            text: "How many hours of sleep did you get last night?",
+            text: "Estiamte how many fluid ounces of shampoo you used.",
             answerFormat: sleepAnswerFormat
         )
         sleepItem.isOptional = false

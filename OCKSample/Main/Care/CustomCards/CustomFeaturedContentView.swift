@@ -18,17 +18,15 @@ class CustomFeaturedContentView: OCKFeaturedContentView {
     override init(imageOverlayStyle: UIUserInterfaceStyle = .unspecified) {
         // See that this always calls the super
         super.init(imageOverlayStyle: imageOverlayStyle)
-
-        // xTODO: 1 - Need to become a "delegate" so we know when view is tapped.
         self.delegate = self
     }
 
     // A convenience initializer to make it easier to use our custom featured content
-    /* convenience init(url: String, imageOverlayStyle: UIUserInterfaceStyle = .unspecified) {
-        // xTODO: 2 - Need to call the designated initializer
-        
-        // xTODO: 3 - Need to turn the url string into a real URL using URL(string: String)
-    } */
+    convenience init(url: String, imageOverlayStyle: UIUserInterfaceStyle = .unspecified) {
+        self.init(imageOverlayStyle: imageOverlayStyle)
+        self.url = URL(string: url)
+        self.delegate = self
+    }
 }
 
 /// Need to conform to delegate in order to be delegated to.

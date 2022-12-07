@@ -33,9 +33,9 @@ extension Onboard {
             identifier: "\(identifier()).welcome"
         )
 
-        welcomeInstructionStep.title = "Salutations..."
-        // swiftlint:disable:next line_length
-        welcomeInstructionStep.detailText = "By reading this you are spellbound to join our secret study. Proceed to the consent form now."
+        welcomeInstructionStep.title = "Hello!"
+
+        welcomeInstructionStep.detailText = "To use the app you need to join our study!"
         welcomeInstructionStep.image = UIImage(named: "star")
         welcomeInstructionStep.imageContentMode = .scaleAspectFill
 
@@ -44,11 +44,11 @@ extension Onboard {
             identifier: "\(identifier()).overview"
         )
 
-        studyOverviewInstructionStep.title = "There is no turning back"
+        studyOverviewInstructionStep.title = "Things you need to know"
         studyOverviewInstructionStep.iconImage = UIImage(systemName: "checkmark.seal.fill")
 
         let heartBodyItem = ORKBodyItem(
-            text: "The study will ask you make a blood oath.",
+            text: "The study will ask you general health questions.",
             detailText: nil,
             image: UIImage(systemName: "heart.fill"),
             learnMoreItem: nil,
@@ -56,7 +56,7 @@ extension Onboard {
         )
 
         let completeTasksBodyItem = ORKBodyItem(
-            text: "You will have to do meaningless tasks over the duration of the study.",
+            text: "You will be asked to provide reliable shower data.",
             detailText: nil,
             image: UIImage(systemName: "checkmark.circle.fill"),
             learnMoreItem: nil,
@@ -72,7 +72,7 @@ extension Onboard {
         )
 
         let secureDataBodyItem = ORKBodyItem(
-            text: "Your data legally will become our property.",
+            text: "Your data will be secure.",
             detailText: nil,
             image: UIImage(systemName: "lock.fill"),
             learnMoreItem: nil,
@@ -139,8 +139,7 @@ extension Onboard {
         )
 
         completionStep.title = "Enrollment Complete"
-        // swiftlint:disable:next line_length
-        completionStep.text = "Hahahaha!!! You FOOL! You are now part of the study for the next 400 years! A car will soon arive at your location to pick you up. Bring nothing with you. Tell no one you are going. You cannot run."
+        completionStep.text = "Thank you for participating in our study! You can opt out any time."
 
         let surveyTask = ORKOrderedTask(
             identifier: identifier(),

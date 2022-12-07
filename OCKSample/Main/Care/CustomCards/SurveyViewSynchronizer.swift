@@ -33,11 +33,9 @@ final class SurveyViewSynchronizer: OCKSurveyTaskViewSynchronizer {
             let pain = event.answer(kind: CheckIn.painItemIdentifier)
             let sleep = event.answer(kind: CheckIn.sleepItemIdentifier)
 
-            let range = event.answer(kind: RangeOfMotion.identifier())
-
             view.instructionsLabel.text = """
-                Pain: \(Int(pain))
-                Sleep: \(Int(sleep)) hours
+                Shower length: \(Int(pain)) minutes
+                Shampoo used: \(Int(sleep)) fluid ounces
                 """
         } else {
             view.instructionsLabel.isHidden = true
