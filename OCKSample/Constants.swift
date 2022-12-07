@@ -64,7 +64,7 @@ extension AppError: LocalizedError {
 }
 
 enum Constants {
-    static let parseConfigFileName = "ParseCareKit"
+    static let parseConfigFileName = "ParseCareKit" // -heroku
     static let iOSParseCareStoreName = "iOSParseStore"
     static let iOSLocalCareStoreName = "iOSLocalStore"
     static let watchOSParseCareStoreName = "watchOSParseStore"
@@ -73,15 +73,39 @@ enum Constants {
     static let parseUserSessionTokenKey = "requestParseSessionToken"
     static let requestSync = "requestSync"
     static let progressUpdate = "progressUpdate"
-    static let finishedAskingForPermission = "finishedAskingForPermission"
     static let completedFirstSyncAfterLogin = "completedFirstSyncAfterLogin"
+    static let finishedAskingForPermission = "finishedAskingForPermission"
+    static let shouldRefreshView = "shouldRefreshView"
     static let userLoggedIn = "userLoggedIn"
     static let storeInitialized = "storeInitialized"
     static let userTypeKey = "userType"
+    static let card = "card"
+    static let survey = "survey"
 }
 
 enum MainViewPath {
     case tabs
+}
+
+enum CareKitCard: String, CaseIterable, Identifiable {
+    var id: Self { self }
+    case button = "Button"
+    case checklist = "Checklist"
+    case featured = "Featured"
+    case grid = "Grid"
+    case instruction = "Instruction"
+    case labeledValue = "Labeled Value"
+    case link = "Link"
+    case numericProgress = "Numeric Progress"
+    case simple = "Simple"
+    case survey = "Survey"
+    case custom = "Custom" // xTODO: Should add any custom card you make to this enum.
+}
+
+enum CarePlanID: String, CaseIterable, Identifiable {
+    var id: Self { self }
+    case health // Add custom id's for your Care Plans, these are examples
+    case checkIn
 }
 
 enum TaskID {
@@ -90,6 +114,12 @@ enum TaskID {
     static let stretch = "stretch"
     static let kegels = "kegels"
     static let steps = "steps"
+    static let repetition = "repetition"
+    static let washFace = "washFace"
+    static let dirtiness = "dirtiness"
+    static let shower = "shower"
+    static let shampoo = "shampoo"
+    static let towels = "towels"
 
     static var ordered: [String] {
         [Self.steps, Self.doxylamine, Self.kegels, Self.stretch, Self.nausea]

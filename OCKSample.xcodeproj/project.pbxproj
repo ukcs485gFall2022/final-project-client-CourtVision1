@@ -103,6 +103,59 @@
 		E7440E4F229477F7007AD30A /* CareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7440E4E229477F7007AD30A /* CareViewController.swift */; };
 		E7C37849228F887800E982D8 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C37848228F887800E982D8 /* TipView.swift */; };
 		E7C4CA0B22809AD500ECC3D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C4CA0A22809AD500ECC3D7 /* Assets.xcassets */; };
+		F5144AED292C452200DA41A6 /* CustomContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5144AEC292C452200DA41A6 /* CustomContactViewController.swift */; };
+		F5144AF1292C488A00DA41A6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5144AF0292C488A00DA41A6 /* ImagePicker.swift */; };
+		F5144AF3292C489800DA41A6 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5144AF2292C489800DA41A6 /* ProfileImageView.swift */; };
+		F5144AF5292C48F300DA41A6 /* OCKBiologicalSex+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5144AF4292C48F300DA41A6 /* OCKBiologicalSex+Hashable.swift */; };
+		F5144AF9292C4B2000DA41A6 /* MyContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5144AF8292C4B2000DA41A6 /* MyContactView.swift */; };
+		F5144AFB292C4B2300DA41A6 /* MyContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5144AFA292C4B2300DA41A6 /* MyContactViewController.swift */; };
+		F5144AFF292C71FD00DA41A6 /* OCKSynchronizedStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5144AFE292C71FD00DA41A6 /* OCKSynchronizedStoreManager.swift */; };
+		F5144B00292C749700DA41A6 /* OCKSynchronizedStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5144AFE292C71FD00DA41A6 /* OCKSynchronizedStoreManager.swift */; };
+		F52CF9AA28F9E398004EEBF0 /* AnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9A928F9E398004EEBF0 /* AnimationStyle.swift */; };
+		F52CF9AC28F9E4BF004EEBF0 /* AppearanceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9AB28F9E4BF004EEBF0 /* AppearanceStyle.swift */; };
+		F52CF9AE28F9E4E9004EEBF0 /* DimensionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9AD28F9E4E9004EEBF0 /* DimensionStyle.swift */; };
+		F53ED971292D759F002C3413 /* OCKTask+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583B697290B56BD00FE1C5A /* OCKTask+Custom.swift */; };
+		F53ED977292D76A0002C3413 /* Consent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED975292D76A0002C3413 /* Consent.swift */; };
+		F53ED97B292D7C66002C3413 /* OCKAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED97A292D7C66002C3413 /* OCKAnyEvent.swift */; };
+		F53ED97C292D7C66002C3413 /* OCKAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED97A292D7C66002C3413 /* OCKAnyEvent.swift */; };
+		F53ED980292D7D9B002C3413 /* SurveyViewSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED97F292D7D9B002C3413 /* SurveyViewSynchronizer.swift */; };
+		F53ED984292D7E86002C3413 /* Surveyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED982292D7E85002C3413 /* Surveyable.swift */; };
+		F53ED985292D7E86002C3413 /* Surveyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED982292D7E85002C3413 /* Surveyable.swift */; };
+		F53ED986292D7E86002C3413 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED983292D7E86002C3413 /* Survey.swift */; };
+		F53ED987292D7E86002C3413 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED983292D7E86002C3413 /* Survey.swift */; };
+		F53ED98B292D7E8F002C3413 /* Onboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED988292D7E8E002C3413 /* Onboard.swift */; };
+		F53ED98C292D7E8F002C3413 /* RangeOfMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED989292D7E8F002C3413 /* RangeOfMotion.swift */; };
+		F53ED98D292D7E8F002C3413 /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED98A292D7E8F002C3413 /* CheckIn.swift */; };
+		F53ED98E292D8120002C3413 /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED98A292D7E8F002C3413 /* CheckIn.swift */; };
+		F53ED98F292D8123002C3413 /* Onboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED988292D7E8E002C3413 /* Onboard.swift */; };
+		F53ED990292D8124002C3413 /* RangeOfMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53ED989292D7E8F002C3413 /* RangeOfMotion.swift */; };
+		F545000A294009DB009A994F /* OCKAnyOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5450009294009DB009A994F /* OCKAnyOutcome.swift */; };
+		F545000B294009DB009A994F /* OCKAnyOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5450009294009DB009A994F /* OCKAnyOutcome.swift */; };
+		F545000D294009F4009A994F /* OCKTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545000C294009F4009A994F /* OCKTaskController.swift */; };
+		F545000E294009F4009A994F /* OCKTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545000C294009F4009A994F /* OCKTaskController.swift */; };
+		F5450010294009FB009A994F /* OCKTaskEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545000F294009FB009A994F /* OCKTaskEvents.swift */; };
+		F5450011294009FB009A994F /* OCKTaskEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545000F294009FB009A994F /* OCKTaskEvents.swift */; };
+		F545001329400A87009A994F /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545001229400A86009A994F /* CardViewModel.swift */; };
+		F545001429400A87009A994F /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545001229400A86009A994F /* CardViewModel.swift */; };
+		F545001829400AD4009A994F /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545001629400AD4009A994F /* CustomCardView.swift */; };
+		F545001929400AD4009A994F /* CustomCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545001729400AD4009A994F /* CustomCardViewModel.swift */; };
+		F545001B29400B02009A994F /* ScheduleUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545001A29400B02009A994F /* ScheduleUtility.swift */; };
+		F545001C29400B02009A994F /* ScheduleUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545001A29400B02009A994F /* ScheduleUtility.swift */; };
+		F545001E29400F96009A994F /* OCKEventAggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545001D29400F96009A994F /* OCKEventAggregator.swift */; };
+		F545001F29400F96009A994F /* OCKEventAggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545001D29400F96009A994F /* OCKEventAggregator.swift */; };
+		F545002229400FFD009A994F /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545002129400FFD009A994F /* InsightsView.swift */; };
+		F54500242940100E009A994F /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54500232940100E009A994F /* InsightsViewController.swift */; };
+		F583B691290B1C5100FE1C5A /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583B690290B1C5100FE1C5A /* TaskView.swift */; };
+		F583B693290B1C8F00FE1C5A /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583B692290B1C8F00FE1C5A /* TaskViewModel.swift */; };
+		F583B698290B56BD00FE1C5A /* OCKTask+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583B697290B56BD00FE1C5A /* OCKTask+Custom.swift */; };
+		F583B69A290B612400FE1C5A /* HealthKitTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583B699290B612400FE1C5A /* HealthKitTaskView.swift */; };
+		F583B69C290B619500FE1C5A /* HealthKitTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583B69B290B619500FE1C5A /* HealthKitTaskViewModel.swift */; };
+		F5ADA23E28F9FA4600D5317F /* AppearanceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9AB28F9E4BF004EEBF0 /* AppearanceStyle.swift */; };
+		F5ADA23F28F9FA4900D5317F /* DimensionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9AD28F9E4E9004EEBF0 /* DimensionStyle.swift */; };
+		F5ADA24028F9FA4B00D5317F /* AnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CF9A928F9E398004EEBF0 /* AnimationStyle.swift */; };
+		F5BE45A82936AD0B008D3CCE /* CustomFeaturedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE45A72936AD0B008D3CCE /* CustomFeaturedContentView.swift */; };
+		F5F43E1B2936A6E900D1A16F /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53ED96C292D7000002C3413 /* ResearchKit.framework */; };
+		F5F43E1C2936A6E900D1A16F /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F53ED96C292D7000002C3413 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,19 +173,23 @@
 			remoteGlobalIDString = 91AD922624A4C42B00925D4D;
 			remoteInfo = OCKWatchSample;
 		};
+		F53ED96B292D7000002C3413 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F53ED965292D7000002C3413 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		F53ED96D292D7000002C3413 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F53ED965292D7000002C3413 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		51431FA223D166AE006A7CFD /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		91AD924C24A4C42E00925D4D /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +199,17 @@
 				91AD924B24A4C42E00925D4D /* OCKWatchSample.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F43E1D2936A6E900D1A16F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F5F43E1C2936A6E900D1A16F /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -220,6 +288,41 @@
 		E7440E4E229477F7007AD30A /* CareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareViewController.swift; sourceTree = "<group>"; };
 		E7C37848228F887800E982D8 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		E7C4CA0A22809AD500ECC3D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5144AEC292C452200DA41A6 /* CustomContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContactViewController.swift; sourceTree = "<group>"; };
+		F5144AF0292C488A00DA41A6 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F5144AF2292C489800DA41A6 /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		F5144AF4292C48F300DA41A6 /* OCKBiologicalSex+Hashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCKBiologicalSex+Hashable.swift"; sourceTree = "<group>"; };
+		F5144AF8292C4B2000DA41A6 /* MyContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContactView.swift; sourceTree = "<group>"; };
+		F5144AFA292C4B2300DA41A6 /* MyContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContactViewController.swift; sourceTree = "<group>"; };
+		F5144AFE292C71FD00DA41A6 /* OCKSynchronizedStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCKSynchronizedStoreManager.swift; sourceTree = "<group>"; };
+		F52CF9A928F9E398004EEBF0 /* AnimationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationStyle.swift; sourceTree = "<group>"; };
+		F52CF9AB28F9E4BF004EEBF0 /* AppearanceStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceStyle.swift; sourceTree = "<group>"; };
+		F52CF9AD28F9E4E9004EEBF0 /* DimensionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimensionStyle.swift; sourceTree = "<group>"; };
+		F53ED965292D7000002C3413 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		F53ED975292D76A0002C3413 /* Consent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consent.swift; sourceTree = "<group>"; };
+		F53ED97A292D7C66002C3413 /* OCKAnyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKAnyEvent.swift; sourceTree = "<group>"; };
+		F53ED97F292D7D9B002C3413 /* SurveyViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewSynchronizer.swift; sourceTree = "<group>"; };
+		F53ED982292D7E85002C3413 /* Surveyable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Surveyable.swift; sourceTree = "<group>"; };
+		F53ED983292D7E86002C3413 /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		F53ED988292D7E8E002C3413 /* Onboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboard.swift; sourceTree = "<group>"; };
+		F53ED989292D7E8F002C3413 /* RangeOfMotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeOfMotion.swift; sourceTree = "<group>"; };
+		F53ED98A292D7E8F002C3413 /* CheckIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
+		F5450009294009DB009A994F /* OCKAnyOutcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCKAnyOutcome.swift; sourceTree = "<group>"; };
+		F545000C294009F4009A994F /* OCKTaskController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCKTaskController.swift; sourceTree = "<group>"; };
+		F545000F294009FB009A994F /* OCKTaskEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCKTaskEvents.swift; sourceTree = "<group>"; };
+		F545001229400A86009A994F /* CardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		F545001629400AD4009A994F /* CustomCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
+		F545001729400AD4009A994F /* CustomCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCardViewModel.swift; sourceTree = "<group>"; };
+		F545001A29400B02009A994F /* ScheduleUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleUtility.swift; sourceTree = "<group>"; };
+		F545001D29400F96009A994F /* OCKEventAggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKEventAggregator.swift; sourceTree = "<group>"; };
+		F545002129400FFD009A994F /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		F54500232940100E009A994F /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
+		F583B690290B1C5100FE1C5A /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		F583B692290B1C8F00FE1C5A /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		F583B697290B56BD00FE1C5A /* OCKTask+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKTask+Custom.swift"; sourceTree = "<group>"; };
+		F583B699290B612400FE1C5A /* HealthKitTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitTaskView.swift; sourceTree = "<group>"; };
+		F583B69B290B619500FE1C5A /* HealthKitTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitTaskViewModel.swift; sourceTree = "<group>"; };
+		F5BE45A72936AD0B008D3CCE /* CustomFeaturedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFeaturedContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +332,7 @@
 			files = (
 				70202EC12807333900CF73FB /* CareKit in Frameworks */,
 				918FDEAF271B3F8F0045A0EF /* ParseCareKit in Frameworks */,
+				F5F43E1B2936A6E900D1A16F /* ResearchKit.framework in Frameworks */,
 				70202EC52807333A00CF73FB /* CareKitUI in Frameworks */,
 				708542F9276687F90029E888 /* HealthKit.framework in Frameworks */,
 				70202EC32807333900CF73FB /* CareKitFHIR in Frameworks */,
@@ -274,7 +378,11 @@
 		70221F2B28D7C7C600971195 /* CustomCards */ = {
 			isa = PBXGroup;
 			children = (
+				F545001529400AB6009A994F /* CustomCard */,
 				E7C37848228F887800E982D8 /* TipView.swift */,
+				F545001229400A86009A994F /* CardViewModel.swift */,
+				F53ED97F292D7D9B002C3413 /* SurveyViewSynchronizer.swift */,
+				F5BE45A72936AD0B008D3CCE /* CustomFeaturedContentView.swift */,
 			);
 			path = CustomCards;
 			sourceTree = "<group>";
@@ -300,6 +408,9 @@
 		703088772582727500FFABB6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F545002029400FDC009A994F /* Insights */,
+				F53ED981292D7DBE002C3413 /* Surveys */,
+				F53ED974292D7688002C3413 /* Onboarding */,
 				70221F2728D7809800971195 /* MainTabView.swift */,
 				7036E4D2256EBE35006E9A3C /* MainView.swift */,
 				70308878258272CD00FFABB6 /* Care */,
@@ -324,8 +435,16 @@
 		7030887C258272E700FFABB6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F5144AF8292C4B2000DA41A6 /* MyContactView.swift */,
+				F5144AFA292C4B2300DA41A6 /* MyContactViewController.swift */,
+				F5144AF2292C489800DA41A6 /* ProfileImageView.swift */,
+				F5144AF0292C488A00DA41A6 /* ImagePicker.swift */,
 				7036E4C8256E1A6F006E9A3C /* ProfileView.swift */,
 				7036E516256F2413006E9A3C /* ProfileViewModel.swift */,
+				F583B690290B1C5100FE1C5A /* TaskView.swift */,
+				F583B692290B1C8F00FE1C5A /* TaskViewModel.swift */,
+				F583B699290B612400FE1C5A /* HealthKitTaskView.swift */,
+				F583B69B290B619500FE1C5A /* HealthKitTaskViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -334,6 +453,7 @@
 			isa = PBXGroup;
 			children = (
 				7036E4CD256E9A0C006E9A3C /* ContactView.swift */,
+				F5144AEC292C452200DA41A6 /* CustomContactViewController.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -412,6 +532,9 @@
 			children = (
 				9169381C271B650700A634ED /* ColorStyler.swift */,
 				9169381A271B64E100A634ED /* Styler.swift */,
+				F52CF9AD28F9E4E9004EEBF0 /* DimensionStyle.swift */,
+				F52CF9AB28F9E4BF004EEBF0 /* AppearanceStyle.swift */,
+				F52CF9A928F9E398004EEBF0 /* AnimationStyle.swift */,
 			);
 			path = Stylers;
 			sourceTree = "<group>";
@@ -420,6 +543,7 @@
 			isa = PBXGroup;
 			children = (
 				918FDEB4271B40590045A0EF /* Installation.swift */,
+				F545001A29400B02009A994F /* ScheduleUtility.swift */,
 				70077596252228E900EC0EDA /* User.swift */,
 			);
 			path = Models;
@@ -432,14 +556,22 @@
 				70221F3328D8ABBE00971195 /* AppDelegate+UIApplicationDelegate.swift */,
 				918FDEBB271B4E4A0045A0EF /* Calendar+Dates.swift */,
 				918FDEB6271B41FF0045A0EF /* Logger.swift */,
+				F53ED97A292D7C66002C3413 /* OCKAnyEvent.swift */,
+				F5450009294009DB009A994F /* OCKAnyOutcome.swift */,
 				70F03A922786087800E5AFB4 /* OCKAnyEvent+CustomStringConvertable.swift */,
+				F5144AF4292C48F300DA41A6 /* OCKBiologicalSex+Hashable.swift */,
 				70F03A942786093B00E5AFB4 /* OCKHealthKitPassthroughStore.swift */,
 				70F03AA027860AB700E5AFB4 /* OCKOutcome.swift */,
 				70F03A9E27860A8800E5AFB4 /* OCKOutcomeValue+Identifiable.swift */,
 				70F03AA227860AFF00E5AFB4 /* OCKPatient+Parse.swift */,
+				F5144AFE292C71FD00DA41A6 /* OCKSynchronizedStoreManager.swift */,
 				70F03A962786098F00E5AFB4 /* OCKStore.swift */,
 				70F03A9827860A0800E5AFB4 /* OCKSynchronizedStoreManager+Publishers.swift */,
+				F545000C294009F4009A994F /* OCKTaskController.swift */,
+				F545000F294009FB009A994F /* OCKTaskEvents.swift */,
+				F583B697290B56BD00FE1C5A /* OCKTask+Custom.swift */,
 				7083A855279CA40A00B3832E /* PCKUtility.swift */,
+				F545001D29400F96009A994F /* OCKEventAggregator.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -493,6 +625,7 @@
 		E72B2BFD226939E3009A9438 = {
 			isa = PBXGroup;
 			children = (
+				F53ED965292D7000002C3413 /* ResearchKit.xcodeproj */,
 				9169381F271B80EA00A634ED /* CONTRIBUTING.md */,
 				91AD922324A461D200925D4D /* README.md */,
 				0520468223C3C1F2004F0F36 /* OCKSample.xctestplan */,
@@ -531,6 +664,53 @@
 				70F921AA27CABDE900368CEC /* WatchConnectivity */,
 			);
 			path = OCKSample;
+			sourceTree = "<group>";
+		};
+		F53ED966292D7000002C3413 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F53ED96C292D7000002C3413 /* ResearchKit.framework */,
+				F53ED96E292D7000002C3413 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F53ED974292D7688002C3413 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F53ED975292D76A0002C3413 /* Consent.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F53ED981292D7DBE002C3413 /* Surveys */ = {
+			isa = PBXGroup;
+			children = (
+				F53ED98A292D7E8F002C3413 /* CheckIn.swift */,
+				F53ED988292D7E8E002C3413 /* Onboard.swift */,
+				F53ED989292D7E8F002C3413 /* RangeOfMotion.swift */,
+				F53ED983292D7E86002C3413 /* Survey.swift */,
+				F53ED982292D7E85002C3413 /* Surveyable.swift */,
+			);
+			path = Surveys;
+			sourceTree = "<group>";
+		};
+		F545001529400AB6009A994F /* CustomCard */ = {
+			isa = PBXGroup;
+			children = (
+				F545001629400AD4009A994F /* CustomCardView.swift */,
+				F545001729400AD4009A994F /* CustomCardViewModel.swift */,
+			);
+			path = CustomCard;
+			sourceTree = "<group>";
+		};
+		F545002029400FDC009A994F /* Insights */ = {
+			isa = PBXGroup;
+			children = (
+				F545002129400FFD009A994F /* InsightsView.swift */,
+				F54500232940100E009A994F /* InsightsViewController.swift */,
+			);
+			path = Insights;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,9 +758,9 @@
 				E72B2C02226939E3009A9438 /* Sources */,
 				E72B2C04226939E3009A9438 /* Resources */,
 				51431FA123D166AE006A7CFD /* Frameworks */,
-				51431FA223D166AE006A7CFD /* Embed Frameworks */,
 				91AD924C24A4C42E00925D4D /* Embed Watch Content */,
 				9169381E271B6E2100A634ED /* SwiftLint */,
+				F5F43E1D2936A6E900D1A16F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -636,6 +816,12 @@
 			);
 			productRefGroup = E72B2C07226939E3009A9438 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F53ED966292D7000002C3413 /* Products */;
+					ProjectRef = F53ED965292D7000002C3413 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E72B2C05226939E3009A9438 /* OCKSample */,
@@ -644,6 +830,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F53ED96C292D7000002C3413 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = F53ED96B292D7000002C3413 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F53ED96E292D7000002C3413 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = F53ED96D292D7000002C3413 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5173CB8523C3A846007655A0 /* Resources */ = {
@@ -717,37 +920,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F545001F29400F96009A994F /* OCKEventAggregator.swift in Sources */,
 				70F921B327CAC16E00368CEC /* LocalSyncSessionDelegate.swift in Sources */,
+				F53ED98E292D8120002C3413 /* CheckIn.swift in Sources */,
+				F5ADA23E28F9FA4600D5317F /* AppearanceStyle.swift in Sources */,
 				70221F3928D8C10800971195 /* StoreManagerKey.swift in Sources */,
+				F53ED97C292D7C66002C3413 /* OCKAnyEvent.swift in Sources */,
 				70A98D63278A268B009B58F2 /* ColorStyler.swift in Sources */,
 				918FDEB8271B49060045A0EF /* Logger.swift in Sources */,
 				91AD923B24A4C42D00925D4D /* CareView.swift in Sources */,
 				70F03AA427860B2500E5AFB4 /* OCKOutcome.swift in Sources */,
+				F53ED98F292D8123002C3413 /* Onboard.swift in Sources */,
 				70F921A927CA9A4000368CEC /* CustomStylerKey.swift in Sources */,
+				F53ED987292D7E86002C3413 /* Survey.swift in Sources */,
 				7075151E28DE1A8300A57A0C /* MainView.swift in Sources */,
 				70A98D62278A2683009B58F2 /* Styler.swift in Sources */,
 				91693818271B5E1600A634ED /* Constants.swift in Sources */,
 				7075152028DE1BB400A57A0C /* LoginView.swift in Sources */,
 				70F921B227CAC16E00368CEC /* RemoteSessionDelegate.swift in Sources */,
+				F545000E294009F4009A994F /* OCKTaskController.swift in Sources */,
 				70221F2F28D7CDE400971195 /* AppDelegate+ParseRemoteDelegate.swift in Sources */,
+				F5450011294009FB009A994F /* OCKTaskEvents.swift in Sources */,
 				7083A857279CA40F00B3832E /* PCKUtility.swift in Sources */,
 				91AD923924A4C42D00925D4D /* OCKWatchSampleApp.swift in Sources */,
 				70F03AA627860B2500E5AFB4 /* OCKPatient+Parse.swift in Sources */,
+				F5144B00292C749700DA41A6 /* OCKSynchronizedStoreManager.swift in Sources */,
 				70221F3828D8C0CB00971195 /* AppDelegateKey.swift in Sources */,
 				9103AA5227B8C913002C921E /* FontColorKey.swift in Sources */,
+				F53ED985292D7E86002C3413 /* Surveyable.swift in Sources */,
+				F5ADA24028F9FA4B00D5317F /* AnimationStyle.swift in Sources */,
 				707CC719254DA91900116728 /* OCKLocalization.swift in Sources */,
 				7007759B252229C900EC0EDA /* User.swift in Sources */,
 				70F03A9B27860A2000E5AFB4 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */,
 				70F03A912786073300E5AFB4 /* CareViewModel.swift in Sources */,
 				70A98D68278A2DF1009B58F2 /* TintColorKey.swift in Sources */,
 				918FDEB9271B493A0045A0EF /* Installation.swift in Sources */,
+				F545001429400A87009A994F /* CardViewModel.swift in Sources */,
+				F545001C29400B02009A994F /* ScheduleUtility.swift in Sources */,
 				70F03A9D27860A5600E5AFB4 /* OCKSynchronizedStoreManager+Publishers.swift in Sources */,
+				F5ADA23F28F9FA4900D5317F /* DimensionStyle.swift in Sources */,
+				F53ED990292D8124002C3413 /* RangeOfMotion.swift in Sources */,
 				70F03AA527860B2500E5AFB4 /* OCKOutcomeValue+Identifiable.swift in Sources */,
 				91AD923F24A4C42D00925D4D /* NotificationController.swift in Sources */,
+				F545000B294009DB009A994F /* OCKAnyOutcome.swift in Sources */,
 				70CF66E528E1E74C00FAE977 /* TintColorFlipKey.swift in Sources */,
 				70F03A9C27860A2000E5AFB4 /* OCKStore.swift in Sources */,
 				70C0D474279BA492003DA141 /* Utility.swift in Sources */,
 				91AD923D24A4C42D00925D4D /* AppDelegate.swift in Sources */,
+				F53ED971292D759F002C3413 /* OCKTask+Custom.swift in Sources */,
 				91AD924124A4C42D00925D4D /* NotificationView.swift in Sources */,
 				70308886258273D400FFABB6 /* LoginViewModel.swift in Sources */,
 				70F921B127CAC16E00368CEC /* SessionDelegate.swift in Sources */,
@@ -758,45 +978,79 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53ED984292D7E86002C3413 /* Surveyable.swift in Sources */,
 				E7440E4F229477F7007AD30A /* CareViewController.swift in Sources */,
 				918FDEB5271B40590045A0EF /* Installation.swift in Sources */,
+				F53ED977292D76A0002C3413 /* Consent.swift in Sources */,
+				F545001329400A87009A994F /* CardViewModel.swift in Sources */,
+				F545000D294009F4009A994F /* OCKTaskController.swift in Sources */,
 				70F921AC27CABE3000368CEC /* SessionDelegate.swift in Sources */,
 				70F0EFEA28C2EE6C0005B5A2 /* AppDelegateKey.swift in Sources */,
+				F53ED97B292D7C66002C3413 /* OCKAnyEvent.swift in Sources */,
 				7036E64025717F85006E9A3C /* Constants.swift in Sources */,
 				918FDEBC271B4E4A0045A0EF /* Calendar+Dates.swift in Sources */,
 				70F03AA127860AB700E5AFB4 /* OCKOutcome.swift in Sources */,
+				F5144AFF292C71FD00DA41A6 /* OCKSynchronizedStoreManager.swift in Sources */,
 				7036E4CE256E9A0C006E9A3C /* ContactView.swift in Sources */,
 				70F03A972786098F00E5AFB4 /* OCKStore.swift in Sources */,
+				F5144AFB292C4B2300DA41A6 /* MyContactViewController.swift in Sources */,
 				70DFD80B2567074500B9DB12 /* LoginView.swift in Sources */,
 				70F03AA827860E7700E5AFB4 /* FontColorKey.swift in Sources */,
 				9169381B271B64E100A634ED /* Styler.swift in Sources */,
 				70F921A827CA9A3A00368CEC /* CustomStylerKey.swift in Sources */,
 				70221F3428D8ABBE00971195 /* AppDelegate+UIApplicationDelegate.swift in Sources */,
+				F545001E29400F96009A994F /* OCKEventAggregator.swift in Sources */,
+				F545001B29400B02009A994F /* ScheduleUtility.swift in Sources */,
 				9169381D271B650700A634ED /* ColorStyler.swift in Sources */,
+				F5450010294009FB009A994F /* OCKTaskEvents.swift in Sources */,
 				E72B2C0A226939E3009A9438 /* AppDelegate.swift in Sources */,
+				F52CF9AC28F9E4BF004EEBF0 /* AppearanceStyle.swift in Sources */,
+				F583B698290B56BD00FE1C5A /* OCKTask+Custom.swift in Sources */,
+				F5144AF3292C489800DA41A6 /* ProfileImageView.swift in Sources */,
 				7036E4C4256E0A48006E9A3C /* CareView.swift in Sources */,
 				70F921B027CABED600368CEC /* LocalSyncSessionDelegate.swift in Sources */,
+				F5144AED292C452200DA41A6 /* CustomContactViewController.swift in Sources */,
+				F5BE45A82936AD0B008D3CCE /* CustomFeaturedContentView.swift in Sources */,
+				F583B69C290B619500FE1C5A /* HealthKitTaskViewModel.swift in Sources */,
 				70F03A932786087800E5AFB4 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */,
 				70221F2828D7809800971195 /* MainTabView.swift in Sources */,
 				918FDEC3271B4E950045A0EF /* TintColorKey.swift in Sources */,
+				F545001829400AD4009A994F /* CustomCardView.swift in Sources */,
 				70CF66E428E1E74C00FAE977 /* TintColorFlipKey.swift in Sources */,
+				F545001929400AD4009A994F /* CustomCardViewModel.swift in Sources */,
+				F583B69A290B612400FE1C5A /* HealthKitTaskView.swift in Sources */,
+				F5144AF1292C488A00DA41A6 /* ImagePicker.swift in Sources */,
 				70F03AA327860AFF00E5AFB4 /* OCKPatient+Parse.swift in Sources */,
+				F54500242940100E009A994F /* InsightsViewController.swift in Sources */,
 				70F0EFE828C2EC050005B5A2 /* OCKSampleApp.swift in Sources */,
+				F5144AF5292C48F300DA41A6 /* OCKBiologicalSex+Hashable.swift in Sources */,
 				918FDEB7271B41FF0045A0EF /* Logger.swift in Sources */,
 				70F03A9F27860A8800E5AFB4 /* OCKOutcomeValue+Identifiable.swift in Sources */,
 				70221F2A28D7BE0600971195 /* AppDelegate+ParseRemoteDelegate.swift in Sources */,
+				F53ED98D292D7E8F002C3413 /* CheckIn.swift in Sources */,
 				7036E4D3256EBE35006E9A3C /* MainView.swift in Sources */,
 				918FDEC5271B4EA70045A0EF /* StoreManagerKey.swift in Sources */,
 				91693822271B897200A634ED /* Utility.swift in Sources */,
+				F5144AF9292C4B2000DA41A6 /* MyContactView.swift in Sources */,
+				F53ED98C292D7E8F002C3413 /* RangeOfMotion.swift in Sources */,
+				F53ED980292D7D9B002C3413 /* SurveyViewSynchronizer.swift in Sources */,
+				F583B691290B1C5100FE1C5A /* TaskView.swift in Sources */,
+				F52CF9AE28F9E4E9004EEBF0 /* DimensionStyle.swift in Sources */,
 				707CC718254DA91900116728 /* OCKLocalization.swift in Sources */,
+				F53ED98B292D7E8F002C3413 /* Onboard.swift in Sources */,
 				E7C37849228F887800E982D8 /* TipView.swift in Sources */,
 				70077597252228E900EC0EDA /* User.swift in Sources */,
 				70F03A9927860A0800E5AFB4 /* OCKSynchronizedStoreManager+Publishers.swift in Sources */,
+				F545000A294009DB009A994F /* OCKAnyOutcome.swift in Sources */,
+				F52CF9AA28F9E398004EEBF0 /* AnimationStyle.swift in Sources */,
 				7036E4C9256E1A6F006E9A3C /* ProfileView.swift in Sources */,
 				7083A856279CA40A00B3832E /* PCKUtility.swift in Sources */,
 				70F921AE27CABE7700368CEC /* RemoteSessionDelegate.swift in Sources */,
 				70F03A952786093B00E5AFB4 /* OCKHealthKitPassthroughStore.swift in Sources */,
 				7036E4BF256DA089006E9A3C /* LoginViewModel.swift in Sources */,
+				F53ED986292D7E86002C3413 /* Survey.swift in Sources */,
+				F545002229400FFD009A994F /* InsightsView.swift in Sources */,
+				F583B693290B1C8F00FE1C5A /* TaskViewModel.swift in Sources */,
 				7036E517256F2413006E9A3C /* ProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
