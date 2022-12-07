@@ -21,7 +21,7 @@ struct RangeOfMotion: Surveyable {
 extension RangeOfMotion {
     func createSurvey() -> ORKTask {
 
-        let rangeOfMotionOrderedTask = ORKOrderedTask.kneeRangeOfMotionTask(
+        let rangeOfMotionOrderedTask = ORKOrderedTask.shoulderRangeOfMotionTask(
             withIdentifier: identifier(),
             limbOption: .left,
             intendedUseDescription: nil,
@@ -30,7 +30,7 @@ extension RangeOfMotion {
 
         let completionStep = ORKCompletionStep(identifier: "\(identifier()).completion")
         completionStep.title = "All done!"
-        completionStep.detailText = "We know the road to recovery can be tough. Keep up the good work!"
+        completionStep.detailText = "Keep that shoulder loosened up!"
 
         rangeOfMotionOrderedTask.addSteps(from: [completionStep])
 
